@@ -43,7 +43,7 @@ class doctores : Fragment() {
 
                 //2- creo una variable que contenga un PrepareStatement
                 val addProducto =
-                    claseC?.prepareStatement("insert into tbDoctores(DoctorUUID, nombreDoctor, Especialidad, Telefono) values(?, ?, ?, ?)")!!
+                    claseC?.prepareStatement("insert into tbDoctoress(DoctorUUID, nombreDoctor, Especialidad, Telefono) values(?, ?, ?, ?)")!!
                 addProducto.setString(1, UUID.randomUUID().toString())
                 addProducto.setString(2, txtNombreDoctor.text.toString())
                 addProducto.setString(3, txtEspecialidadDoctor.text.toString())

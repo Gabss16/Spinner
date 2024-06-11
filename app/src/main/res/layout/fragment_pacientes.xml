@@ -27,7 +27,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="37dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
@@ -38,26 +38,28 @@
     <EditText
         android:id="@+id/txtDireccionPaciente"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="48dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="25dp"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/btnGuardarPaciente"
-        app:layout_constraintEnd_toEndOf="@+id/txtFechaNacimiento"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
 
     <Spinner
         android:id="@+id/spDoctores"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="72dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="58dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="34dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombrePaciente" />
 
     <TextView
         android:id="@+id/textView3"
@@ -74,22 +76,23 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginBottom="119dp"
         android:text="Dirección del paciente"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtDireccionPaciente"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardarPaciente"
+        app:layout_constraintStart_toStartOf="@+id/txtDireccionPaciente"
         app:layout_constraintTop_toBottomOf="@+id/txtFechaNacimiento" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
         android:text="Doctor que lo atenderá"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/spDoctores"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/spDoctores"
         app:layout_constraintTop_toBottomOf="@+id/txtNombrePaciente" />
 
@@ -102,32 +105,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDireccionPaciente" />
-
-    <EditText
-        android:id="@+id/txtFechaNacimiento"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="41dp"
-        android:ems="10"
-        android:inputType="none"
-        android:focusable="false"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/spDoctores"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="29dp"
         android:text="Fecha de Nacimiento"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/txtFechaNacimiento"
-        app:layout_constraintStart_toStartOf="@+id/txtFechaNacimiento"
-        app:layout_constraintTop_toBottomOf="@+id/spDoctores" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/txtFechaNacimiento"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:inputType="none"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
